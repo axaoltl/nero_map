@@ -34,7 +34,8 @@ const inputCatIndexes = {
     20: "illegal-npcs",
     21: "players-shops",
     22: "checkpoints",
-    23: "berries",
+    23: "berries",    
+    24: "billboards"
 }
 const layerCat = [...document.querySelectorAll(".wrapper>div")]
 console.log(layerCat)
