@@ -1,3 +1,36 @@
+*::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+    /* при изменении текущего цвета - изменить также ыцет и в .panel */
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #c4cdcf;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #c4cdcf;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #397524;
+    /* при изменении текущего цвета - изменить также ыцет и в .panel */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #498433;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #498433;
+}
+
 html,
 body {
     height: 100%;
@@ -38,19 +71,19 @@ label {
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked+label {
     background-image: url(../assets/images/check.svg);
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"]+label {
     background-image: url(../assets/images/uncheck.svg);
 }
 
 .left {
     width: 164px;
     height: 90vh;
-    background-color: rgba(126, 120, 120, 0.95);
     position: fixed;
+    background-color: rgb(161 155 155 / 95%);
     top: 20px;
     left: 20px;
     z-index: 1000;
@@ -67,6 +100,8 @@ input[type="checkbox"] + label {
     width: 100%;
     height: calc(100% - 70px);
     overflow-y: auto;
+    scrollbar-width: 10px;
+    scrollbar-color: #397524 #dfe9eb;
 }
 
 .off {
@@ -236,6 +271,10 @@ input[type="checkbox"] + label {
 
 .panel_list .berries {
     background-image: url(../assets/images/berry_indigo.jpg);
+}
+
+.panel_list .billboards {
+    background-image: url(../assets/images/billboard.png);
 }
 
 .panel_choice {
@@ -1486,7 +1525,7 @@ input[type="checkbox"] + label {
 
 .position_box-garbage-bin-cala-1 {
     top: 1074px;
-    left: 1735px;
+    left: 1736px;
 }
 
 .position_box-garbage-bin-cala-2 {
@@ -1525,7 +1564,7 @@ input[type="checkbox"] + label {
 }
 
 .position_box-berry-teal-1 {
-    top: 796px; 
+    top: 796px;
     left: 1930px;
 }
 
@@ -1535,102 +1574,102 @@ input[type="checkbox"] + label {
 }
 
 .position_box-berry-russet-1 {
-    top: 762px; 
+    top: 762px;
     left: 1838px;
 }
 
 .position_box-berry-russet-2 {
-    top: 808px; 
+    top: 808px;
     left: 1848px;
 }
 
 .position_box-berry-russet-3 {
-    top: 822px; 
+    top: 822px;
     left: 1870px;
 }
 
 .position_box-berry-russet-4 {
-    top: 612px; 
+    top: 612px;
     left: 1650px;
 }
 
 .position_box-berry-russet-5 {
-    top: 742px; 
+    top: 742px;
     left: 1544px;
 }
 
 .position_box-berry-russet-6 {
-    top: 804px; 
+    top: 804px;
     left: 1440px;
 }
 
 .position_box-berry-russet-7 {
-    top: 618px; 
+    top: 618px;
     left: 1396px;
 }
 
 .position_box-berry-russet-8 {
-    top: 442px; 
+    top: 442px;
     left: 1530px;
 }
 
 .position_box-berry-russet-9 {
-    top: 485px; 
+    top: 485px;
     left: 1693px;
 }
 
 .position_box-berry-russet-10 {
-    top: 435px; 
+    top: 435px;
     left: 1714px;
 }
 
 .position_box-berry-russet-11 {
-    top: 430px; 
+    top: 430px;
     left: 1660px;
 }
 
 .position_box-berry-russet-12 {
-    top: 378px; 
+    top: 378px;
     left: 1560px;
 }
 
 .position_box-berry-jade-1 {
-    top: 608px; 
+    top: 608px;
     left: 1684px;
 }
 
 .position_box-berry-jade-2 {
-    top: 482px; 
+    top: 482px;
     left: 1658px;
 }
 
 .position_box-berry-indigo-1 {
-    top: 634px; 
+    top: 634px;
     left: 1650px;
 }
 
 .position_box-berry-indigo-2 {
-    top: 726px; 
+    top: 726px;
     left: 1528px;
 }
 
 .position_box-berry-indigo-3 {
-    top: 720px; 
+    top: 720px;
     left: 1348px;
 }
 
 .position_box-berry-indigo-4 {
-    top: 624px; 
+    top: 624px;
     left: 1433px;
 }
 
 .position_box-berry-indigo-5 {
-    top: 402px; 
+    top: 402px;
     left: 1768px;
 }
 
 .position_box-berry-mauve-1 {
-    top: 616px; 
+    top: 616px;
     left: 1194px;
 }
 
@@ -1640,42 +1679,42 @@ input[type="checkbox"] + label {
 }
 
 .position_box-berry-vermillion-1 {
-    top: 860px; 
+    top: 860px;
     left: 1606px;
 }
 
 .position_box-berry-vermillion-2 {
-    top: 662px; 
+    top: 662px;
     left: 1518px;
 }
 
 .position_box-berry-vermillion-3 {
-    top: 598px; 
+    top: 598px;
     left: 1164px;
 }
 
 .position_box-berry-vermillion-4 {
-    top: 528px; 
+    top: 528px;
     left: 1298px;
 }
 
 .position_box-berry-amber-1 {
-    top: 706px; 
+    top: 706px;
     left: 1548px;
 }
 
 .position_box-berry-amber-2 {
-    top: 668px; 
+    top: 668px;
     left: 1420px;
 }
 
 .position_box-berry-amber-3 {
-    top: 454px; 
+    top: 454px;
     left: 1502px;
 }
 
 .position_box-berry-amber-4 {
-    top: 442px; 
+    top: 442px;
     left: 1296px;
 }
 
@@ -1798,6 +1837,7 @@ input[type="checkbox"] + label {
     top: 1664px;
     left: 346px;
 }
+
 .position_box-package-6 {
     top: 1682px;
     left: 335px;
@@ -1871,6 +1911,56 @@ input[type="checkbox"] + label {
 .position_box-corrupt-cop {
     top: 916px;
     left: 1870px;
+}
+
+.position_box-billboard-cala-1 {
+    top: 1114px;
+    left: 1922px;
+}
+
+.position_box-billboard-cala-2 {
+    top: 1090px;
+    left: 1804px;
+}
+
+.position_box-billboard-cala-3 {
+    top: 1070px;
+    left: 1820px;
+}
+
+.position_box-billboard-cala-4 {
+    top: 1080px;
+    left: 1720px;
+}
+
+.position_box-billboard-cala-5 {
+    top: 1272px;
+    left: 1748px;
+}
+
+.position_box-billboard-fern-1 {
+    top: 1865px;
+    left: 1375px;
+}
+
+.position_box-billboard-fern-2 {
+    top: 1976px;
+    left: 1282px;
+}
+
+.position_box-billboard-chester {
+    top: 766px;
+    left: 832px;
+}
+
+.position_box-billboard-mont-1 {
+    top: 334px;
+    left: 506px;
+}
+
+.position_box-billboard-mont-2 {
+    top: 176px;
+    left: 520px;
 }
 
 .popup_side {
